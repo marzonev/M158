@@ -24,31 +24,31 @@ gantt
     title Projektplan Software-Migration
     dateFormat  DD-MM-YYYY
     section Entwicklung & Testing
-    Projektplanung  : a1, 16-05-2025  , 7d
-    Dokumentation / Arbeitsjournal : after a1, 49d
+    Projektplanung  : active, a1, 16-05-2025  , 7d
+    Dokumentation / Arbeitsjournal : active, after a1, 49d
     section Phase 2
-    AWS : b2, after a1, 7d
+    AWS : active, b2, after a1, 7d
     Snapshot 1  : milestone, sn1
     section Phase 3
-    OS-konf :c1, after b2, 7d
+    OS-konf : active,c1, after b2, 7d
     Snapshot 2 : milestone, sn2
-    Webserver / DB (PhpMyAdmin) :c2, after c1, 7d
+    Webserver / DB (PhpMyAdmin) : active,c2, after c1, 7d
     Snapshot 3 : milestone, sn3
-    V-Host : c3, after c2, 7d
+    V-Host : active, c3, after c2, 7d
     Snapshot 4 : milestone, sn4
-    DNS-Server : c4, after c3, 7d
+    DNS-Server : active, c4, after c3, 7d
     Snapshot 5 : milestone, sn5
     section Phase 4
-    Migr-WP-Files : d1, after c4, 7d
-    Migr-WP-DB : d2, after c4, 7d
-    WP-Config : d3, after c4, 7d
+    Migr-WP-Files : active, d1, after c4, 7d
+    Migr-WP-DB : active, d2, after c4, 7d
+    WP-Config : active, d3, after c4, 7d
     Snapshot 6 : milestone, sn6
     section Phase 5
-    Docker Compose : e1, after d3, 7d
-    Testing : e2, after d3, 7d
-
-
+    Docker Compose : active, e1, after d3, 7d
+    Testing : active, e2, after d3, 7d
 ```
+
+
 
 ---
 
