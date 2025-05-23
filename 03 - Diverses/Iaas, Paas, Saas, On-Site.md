@@ -16,7 +16,7 @@
 | ----------- | ---------------------------------------- | ----------------------------------------- |
 | Schwerpunkt | Technische Schichten wie OS, Server etc. | Verantwortungsbereiche wie Daten, Konten  |
 | Darstellung | Farbkästchen: Du vs. Anbieter            | Balken: Du, Anbieter oder gemeinsam       |
-| Detailgrad  | Einfach: verwaltest du oder nicht        | Etwas feiner: auch geteilte Zuständigkeit. Hat auch eine Kategorie mehr, von Sachen die immer beim Kunden liegen. |
+| Detailgrad  | Einfach: verwaltest du oder nicht        | Etwas feiner: auch geteilte Zuständigkeit. Hat auch eine Kategorie mehr (Sachen die immer beim Kunden liegen). |
 
 ---
 
