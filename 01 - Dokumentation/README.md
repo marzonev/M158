@@ -55,7 +55,7 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 ### Stufe 3
 
-![Architekturdiagram](<../03 - Diverses/Architekturdiagram.png>)
+![Architekturdiagram](media/Architekturdiagram.png)
 
 [Hier](<../03 - Diverses/Architekturdiagram.drawio>) ist noch die Datei
 
@@ -65,11 +65,19 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 ### Stufe 1
 
-Fügen Sie hier Ihre Ergebnisse ein
+Die Instanz ist erstellt und man kann per ssh drauf zugreifen.
+
+![Instanz](media/Instanz.png)
+
+![SSH](media/SSH.png)
 
 ### Stufe 2
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man auch die korrekte Konfiguration von den IPs und auch Port Forwarding.
+
+![IPs](media/IPs.png)
+
+![portforward](media/portforward.png)
 
 ---
 
@@ -77,7 +85,7 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 Ändern Sie die Stufe, für die Sie sich entschieden haben, selbst.
 
-### Stufe ?
+### Stufe 3
 
 Fügen Sie hier Ihre Ergebnisse ein
 
