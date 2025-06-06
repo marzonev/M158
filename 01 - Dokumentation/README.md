@@ -9,13 +9,6 @@ Diese Dokumentation ist nach den Aufgaben (1–14) gegliedert. Jede Aufgabe ist 
 
 ## Aufgabe 1 – Projektplan erstellen
 
-### Stufe 1
-
-Fügen Sie hier Ihre Ergebnisse ein
-
-### Stufe 2
-
-Fügen Sie hier Ihre Ergebnisse ein
 
 ### Stufe 3
 
@@ -48,8 +41,6 @@ gantt
     Testing : e2, after d3, 7d
 ```
 
-
-
 ---
 
 ## Aufgabe 2 – Architekturdiagramm erstellen
@@ -64,7 +55,9 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 ### Stufe 3
 
-Fügen Sie hier Ihre Ergebnisse ein
+![Architekturdiagram](<../03 - Diverses/Architekturdiagram.png>)
+
+[Hier](<../03 - Diverses/Architekturdiagram.drawio>) ist noch die Datei
 
 ---
 
