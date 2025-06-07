@@ -1,11 +1,11 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram name="Page-1" id="idlQPCR0Nm5kG-g9A_si">
-    <mxGraphModel dx="1455" dy="1532" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#E6E6E6" math="0" shadow="0">
+    <mxGraphModel dx="2815" dy="2505" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#E6E6E6" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="BapCHJRB3HRV54kZIlsD-42" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="-697" y="-18" width="1072" height="1090" as="geometry" />
+          <mxGeometry x="-690" y="-9" width="1072" height="1090" as="geometry" />
         </mxCell>
         <mxCell id="JVz_1oxV5FioTtpvH3Ss-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#fec85d, #9a5800);strokeColor=#BD7000;fontColor=#000000;" parent="BapCHJRB3HRV54kZIlsD-42" vertex="1">
           <mxGeometry width="1072" height="1090" as="geometry" />
@@ -101,7 +101,7 @@
         <mxCell id="eRcXujZsWT057adxH6SI-6" value="" style="group" vertex="1" connectable="0" parent="BapCHJRB3HRV54kZIlsD-45">
           <mxGeometry x="186.1" y="27.82" width="233.9" height="168.18" as="geometry" />
         </mxCell>
-        <mxCell id="eRcXujZsWT057adxH6SI-4" value="Name: DNS&lt;div&gt;Gateway: 172.31.16.1&lt;/div&gt;&lt;div&gt;Elastic IP:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;18.235.133.85&lt;/span&gt;&lt;/div&gt;&lt;div data-id=&quot;copy-to-clipboard&quot;&gt;&lt;span class=&quot;awsui_root_xjuzf_18lrx_1063&quot;&gt;&lt;span id=&quot;598-1749203219064-2913&quot; class=&quot;awsui_trigger_xjuzf_18lrx_1103&quot;&gt;&lt;div class=&quot;awsui_root_18wu0_1gw4i_920 awsui_box_18wu0_1gw4i_172 awsui_m-right-xs_18wu0_1gw4i_734 awsui_color-default_18wu0_1gw4i_172 awsui_font-size-default_18wu0_1gw4i_188 awsui_font-weight-default_18wu0_1gw4i_228&quot;&gt;&lt;/div&gt;&lt;/span&gt;&lt;div data-awsui-referrer-id=&quot;598-1749203219064-2913&quot; class=&quot;awsui-polaris-compact-mode awsui-compact-mode awsui-visual-refresh awsui_popover-inline-content_xjuzf_18lrx_1158&quot; aria-atomic=&quot;true&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Private IP:&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eRcXujZsWT057adxH6SI-6">
+        <mxCell id="eRcXujZsWT057adxH6SI-4" value="Name: DNS&lt;div&gt;Gateway: 172.31.16.1&lt;/div&gt;&lt;div&gt;Elastic IP:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;18.235.133.85&lt;/span&gt;&lt;/div&gt;&lt;div data-id=&quot;copy-to-clipboard&quot;&gt;&lt;span class=&quot;awsui_root_xjuzf_18lrx_1063&quot;&gt;&lt;span id=&quot;598-1749203219064-2913&quot; class=&quot;awsui_trigger_xjuzf_18lrx_1103&quot;&gt;&lt;div class=&quot;awsui_root_18wu0_1gw4i_920 awsui_box_18wu0_1gw4i_172 awsui_m-right-xs_18wu0_1gw4i_734 awsui_color-default_18wu0_1gw4i_172 awsui_font-size-default_18wu0_1gw4i_188 awsui_font-weight-default_18wu0_1gw4i_228&quot;&gt;&lt;/div&gt;&lt;/span&gt;&lt;div data-awsui-referrer-id=&quot;598-1749203219064-2913&quot; class=&quot;awsui-polaris-compact-mode awsui-compact-mode awsui-visual-refresh awsui_popover-inline-content_xjuzf_18lrx_1158&quot; aria-atomic=&quot;true&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Private IP:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;172.31.24.43&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eRcXujZsWT057adxH6SI-6">
           <mxGeometry width="233.9" height="168.18" as="geometry" />
         </mxCell>
         <mxCell id="eRcXujZsWT057adxH6SI-5" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.dns_domain_name_system;" vertex="1" parent="eRcXujZsWT057adxH6SI-6">
