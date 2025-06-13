@@ -105,6 +105,29 @@ Hier sieht man auch die korrekte Konfiguration von den IPs und auch Port Forward
 
 Fügen Sie hier Ihre Ergebnisse ein
 
+Ich habe als DNS Server Bind9 verwendet auf einer Ubuntu EC2 Instanz.
+
+Dabei habe ich eine Zone für sybhad.internal erstellt.
+
+die Konfiguration sieht so aus:
+
+```
+$TTL 604800
+@   IN  SOA dns.sybhad.internal. admin.sybhad.internal. (
+            2025061301 ; Serial
+            604800     ; Refresh
+            86400      ; Retry
+            2419200    ; Expire
+            604800 )   ; Negative Cache TTL
+@   IN  NS  dns.sybhad.internal.
+dns IN  A   3.87.81.158
+@   IN  A   3.218.233.70
+```
+
+Hier sieht man wie es korrekt resolved
+
+![resolve](media/resolve.png)
+
 ---
 
 ## Aufgabe 5 – Webserver konfigurieren
