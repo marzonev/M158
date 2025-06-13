@@ -67,17 +67,33 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 Die Instanz ist erstellt und man kann per ssh drauf zugreifen.
 
+#### Webserver
+
 ![Instanz](media/Instanz.png)
 
 ![SSH](media/SSH.png)
+
+#### DNS
+
+![Instanz2](media/Instanz2.png)
+
+![SSH2](media/SSH2.png)
 
 ### Stufe 2
 
 Hier sieht man auch die korrekte Konfiguration von den IPs und auch Port Forwarding.
 
+#### Webserver
+
 ![IPs](media/IPs.png)
 
 ![portforward](media/portforward.png)
+
+#### DNS
+
+![IPs2](media/IPs2.png)
+
+![portforward2](media/portforward2.png)
 
 ---
 
