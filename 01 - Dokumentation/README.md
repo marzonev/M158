@@ -45,14 +45,6 @@ gantt
 
 ## Aufgabe 2 – Architekturdiagramm erstellen
 
-### Stufe 1
-
-Fügen Sie hier Ihre Ergebnisse ein
-
-### Stufe 2
-
-Fügen Sie hier Ihre Ergebnisse ein
-
 ### Stufe 3
 
 ![Architekturdiagram](media/Architekturdiagram.png)
@@ -132,17 +124,66 @@ Hier sieht man wie es korrekt resolved
 
 ## Aufgabe 5 – Webserver konfigurieren
 
-### Stufe 1
-
-Fügen Sie hier Ihre Ergebnisse ein
-
 ### Stufe 2
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man meine V-Host config. Dort ist ssl aktiviert.
+
+```apache
+<VirtualHost *:443>
+    ServerName sybhad.internal
+    DocumentRoot /var/www/html
+
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/fullchain.pem
+    SSLCertificateKeyFile /etc/ssl/private/privkey.pem
+
+    <Directory /var/www/html>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+        # Client-Caching für statische Dateien
+    <IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresByType image/jpg "access plus 1 month"
+        ExpiresByType image/jpeg "access plus 1 month"
+        ExpiresByType image/gif "access plus 1 month"
+        ExpiresByType image/png "access plus 1 month"
+        ExpiresByType text/css "access plus 1 month"
+        ExpiresByType application/javascript "access plus 1 month"
+        ExpiresByType image/x-icon "access plus 1 year"
+        ExpiresDefault "access plus 2 days"
+    </IfModule>
+
+        ErrorLog /var/log/apache2/m158_error.log
+        CustomLog /var/log/apache2/m158_access.log combined
+
+
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName sybhad.internal
+    Redirect permanent / https://sybhad.internal/
+</VirtualHost>
+```
 
 ### Stufe 3
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier ist auch noch die https weiterleitung
+
+```apache
+<VirtualHost *:80>
+    ServerName sybhad.internal
+    Redirect permanent / https://sybhad.internal/
+</VirtualHost>
+```
+
+Hier sieht man auch wie man per https auf die Webseite zugreifen kann.
+
+Und die standard-Seite ist auch weg.  
+
+![https](media/https.png)
 
 ---
 
@@ -164,17 +205,26 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 ## Aufgabe 7 – MySQL/MariaDB aufsetzen
 
-### Stufe 1
-
-Fügen Sie hier Ihre Ergebnisse ein
-
 ### Stufe 2
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man alle Nutzer der Datenbank.
 
-### Stufe 3
+Root ist nur von localhost erreichbar.
 
-Fügen Sie hier Ihre Ergebnisse ein
+Für Wordpress hat es den dezidierten Benutzer M158
+
+```mysql
++------------------+-----------+
+| user             | host      |
++------------------+-----------+
+| M158             | %         |
+| root             | %         |
+| mysql.infoschema | localhost |
+| mysql.session    | localhost |
+| mysql.sys        | localhost |
+| root             | localhost |
++------------------+-----------+
+```
 
 ---
 
@@ -182,7 +232,9 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 ### Stufe 1
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man das phpmyadmin läuft mit meiner Domain.
+
+![phpmyadmin](media/phpmyadmin.png)
 
 ### Stufe 2
 
