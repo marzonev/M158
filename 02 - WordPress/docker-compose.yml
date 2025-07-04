@@ -46,7 +46,7 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
     ports:
-      - "8888:443"
+      - "8888:80"
     environment:
       PMA_HOST: db
       PMA_USER: M158
@@ -55,16 +55,6 @@ services:
       PMA_ABSOLUTE_URI: http://sybhad.internal:8888/
     depends_on:
       - db
-    volumes:
-      - ./ssl/certs/fullchain.pem:/etc/ssl/certs/fullchain.pem
-      - ./ssl/private/privkey.pem:/etc/ssl/private/privkey.pem
-      - ./phpmyadmin/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
-    command: >
-      bash -c "
-        a2enmod ssl && 
-        a2ensite default-ssl &&
-        apache2-foreground
-      "
  
 
 volumes:
