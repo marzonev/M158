@@ -191,11 +191,17 @@ Und die standard-Seite ist auch weg.
 
 ### Stufe 1
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man das php auf meinem apache container installiert ist. Abgerufen mit dem Befehl ```php -version```
+
+![phpversion](media/phpversion.png)
+
+Hier auch noch das phpinfo.php file mit meiner Domain.
+
+![phpinfo](media/phpinfo.png)
 
 ### Stufe 2
 
-Fügen Sie hier Ihre Ergebnisse ein
+
 
 ### Stufe 3
 
@@ -353,17 +359,18 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 ## Aufgabe 14 – Docker verwenden
 
-### Stufe 1
-
-Fügen Sie hier Ihre Ergebnisse ein
-
 ### Stufe 2
 
-Fügen Sie hier Ihre Ergebnisse ein
+Ich habe den Webserver, die Datenbank und phpmyadmin in Docker umgesetzt mit dem bereitgestellten docker-compose und Dockerfile.
 
-### Stufe 3
+Hier sieht man die laufenden container:
 
-Fügen Sie hier Ihre Ergebnisse ein
+![dockerps](media/dockerps.png)
+
+Hier sind noch die files:
+[docker-compose](<../02 - WordPress/docker-compose.yml>)
+
+[dockerfile](<../02 - WordPress/dockerfile>)
 
 ---
 
