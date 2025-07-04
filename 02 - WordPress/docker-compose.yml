@@ -59,6 +59,12 @@ services:
       - ./ssl/certs/fullchain.pem:/etc/ssl/certs/fullchain.pem
       - ./ssl/private/privkey.pem:/etc/ssl/private/privkey.pem
       - ./phpmyadmin/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
+    command: >
+      bash -c "
+        a2enmod ssl && 
+        a2ensite default-ssl &&
+        apache2-foreground
+      "
  
 
 volumes:
