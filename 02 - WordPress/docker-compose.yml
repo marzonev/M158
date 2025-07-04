@@ -46,7 +46,7 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
     ports:
-      - "8888:80"
+      - "8888:443"
     environment:
       PMA_HOST: db
       PMA_USER: M158
