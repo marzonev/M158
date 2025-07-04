@@ -1,0 +1,59 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apache_php
+    ports:
+      - "80:80"   # Für HTTP
+      - "443:443"  # Für HTTPS
+    volumes:
+      - ./html:/var/www/html
+      - ./apache/wordpress.conf:/etc/apache2/sites-available/wordpress.conf
+      - ./apache/servername.conf:/etc/apache2/conf-available/servername.conf
+      - ./php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./ssl:/etc/ssl  # Zertifikate einbinden
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    depends_on:
+      - db
+    command: >
+      bash -c "apt-get update && 
+               apt-get install -y libzip-dev libexif-dev libmagickwand-dev libpng-dev libjpeg-dev libicu-dev imagemagick && 
+               docker-php-ext-configure gd --with-jpeg && 
+               docker-php-ext-install mysqli zip exif gd intl && 
+               pecl channel-update pecl.php.net && 
+               (pecl install imagick-3.7.0 && docker-php-ext-enable imagick) || echo 'Imagick installation failed, proceeding without it' && 
+               a2enmod rewrite && 
+               a2enmod ssl &&  
+               ln -sf /etc/apache2/sites-available/wordpress.conf /etc/apache2/sites-enabled/wordpress.conf &&  
+               a2enconf servername && 
+               apache2-foreground"
+
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: wordpress_db
+      MYSQL_USER: M158
+      MYSQL_PASSWORD: Nevio1234
+    volumes:
+      - db_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    ports:
+      - "8888:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: M158
+      PMA_PASSWORD: Nevio1234
+      PMA_ARBITRARY: 1
+      PMA_ABSOLUTE_URI: http://sybhad.internal:8888/
+    depends_on:
+      - db
+
+volumes:
+  db_data:
