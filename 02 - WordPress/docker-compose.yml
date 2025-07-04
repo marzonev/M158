@@ -40,6 +40,7 @@ services:
       MYSQL_PASSWORD: Nevio1234
     volumes:
       - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest

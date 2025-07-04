@@ -153,8 +153,8 @@ CREATE TABLE `VtgnJGv_options` (
 LOCK TABLES `VtgnJGv_options` WRITE;
 /*!40000 ALTER TABLE `VtgnJGv_options` DISABLE KEYS */;
 INSERT INTO `VtgnJGv_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES 
-(1, 'siteurl', 'https://m158.geekz.ch', 'yes'),
-(2, 'home', 'https://m158.geekz.ch', 'yes'),
+(1, 'siteurl', 'https://sybhad.internal', 'yes'),
+(2, 'home', 'https://sybhad.internal', 'yes'),
 (3, 'blogname', 'M158 - WebApp', 'yes'),
 (4, 'blogdescription', '', 'yes'),
 (5, 'users_can_register', '0', 'yes'),

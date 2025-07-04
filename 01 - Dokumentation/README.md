@@ -201,11 +201,23 @@ Hier auch noch das phpinfo.php file mit meiner Domain.
 
 ### Stufe 2
 
+Das php.ini, bei mir custom.ini genannt, ist im apache_php abgelgt.
 
+Diese hat folgende konfiguration gespeichert:
+
+```php
+upload_max_filesize = 128M
+post_max_size = 128M
+memory_limit = 256M
+max_execution_time = 300
+max_input_time = 300
+```
+
+Hier noch die datei: [custom.ini](<../02 - WordPress/php/custom.ini>)
 
 ### Stufe 3
 
-Fügen Sie hier Ihre Ergebnisse ein
+
 
 ---
 
