@@ -262,17 +262,50 @@ Fügen Sie hier Ihre Ergebnisse ein
 
 ### Stufe 1
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man in phpmyadmin wie die Datenbank und Tabellen erfolgreich importiert wurden.
+
+![dbimport](media/dbimport.png)
+
+Hier sieht man noch die WP-Files inklusive Berechtigungen im Document Root des apache Containers.
+
+![wpfiles](media/wpfiles.png)
 
 ### Stufe 2
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man die benötigte DB konfiguration im wp-config
+
+```php
+// ** Database settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wordpress_db' );
+
+/** Database username */
+define( 'DB_USER', 'M158' );
+
+/** Database password */
+define( 'DB_PASSWORD', 'Nevio1234' );
+
+/** Database hostname */
+define( 'DB_HOST', 'mysql_db:3306' );
+
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+```
+
+Das ist noch das ganze File [wp-config](<../02 - WordPress/html/wp-config.php>)
 
 ### Stufe 3
 
-Fügen Sie hier Ihre Ergebnisse ein
+Hier sieht man WP_HOME und WP_SITEURL die auf meine Domain angepasst wurden.
 
----
+![url](media/url.png)
+
+Die Webseite funktioniert und zeigt auch die korrekte Domain an.
+
+![https](media/https.png)
 
 ## Aufgabe 11 – Backup-Konzept umsetzen
 
