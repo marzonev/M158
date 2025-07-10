@@ -56,6 +56,7 @@ services:
     volumes:
       - ./ssl:/etc/ssl
       - ./phpmyadmin/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
+      - ./phpmyadmin/config.secret.inc.php:/etc/phpmyadmin/config.secret.inc.php
     command: >
       sh -c "a2enmod ssl &&
       a2ensite default-ssl &&
