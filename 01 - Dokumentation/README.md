@@ -256,11 +256,30 @@ Hier sieht man das phpmyadmin läuft mit meiner Domain.
 
 ### Stufe 2
 
-Fügen Sie hier Ihre Ergebnisse ein
+Ich habe SSL aktiviert in dem ich im phpmyadmin container eine eigene V-Host config erstellt habe.
 
-### Stufe 3
+Dabei habe ich das Zertifkat verwendet welches ich bereits bei der Shop-Webseite verwendet habe.
 
-Fügen Sie hier Ihre Ergebnisse ein
+```apache
+<VirtualHost *:443>
+    ServerName sybhad.internal
+ 
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/fullchain.pem
+    SSLCertificateKeyFile /etc/ssl/private/privkey.pem
+ 
+    DocumentRoot /var/www/html
+<Directory /var/www/html>
+        AllowOverride All
+</Directory>
+</VirtualHost>
+```
+
+Hier das File: [default-ssl.conf](<../02 - WordPress/phpmyadmin/default-ssl.conf>)
+
+Hier sieht man wie phpmyadmin auf meiner domain mit https läuft.
+
+![sslphpmyadmin](media/sslphpmyadmin.png)
 
 ---
 
